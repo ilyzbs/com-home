@@ -1,0 +1,157 @@
+body{background: #ededed;}
+header{width: 100%;height: 75px;background: #33a1ff;}
+header span{
+	font-size: 40px;
+	text-align: center;
+	color: white;
+	line-height:75px;
+	display:block;
+}
+section{
+	max-width: 640px;
+	width: 640px;
+	height: 100%;
+	margin:0 auto;
+}
+.content{
+	width: 90%;
+	height: auto;
+	margin:0 auto;
+}
+.liststore{
+	width: 100%;
+	height: 100px;
+	border-bottom: solid 1px #999;
+	line-height: 100px;
+}
+.label{
+	display: block;
+	line-height: 80px;
+	float: left;
+	color: red;
+}
+.combox{
+	width: 180px;
+	font-size: 45px;
+	display: block;
+	line-height: 100px;
+	float: left;
+}
+select{
+	width: 375px;
+	height: 60px;
+	font-size: 25px;
+	margin-left: 13px;
+}
+.shop-info{
+	margin-top: 35px;
+	font-size: 25px;
+	text-align: center;
+
+}
+.listview{
+	width: 100%;
+	height: 100px;
+	line-height: 100px;
+}
+.listview input{
+	width: 375px;
+	height: 60px;
+	font-size: 25px;
+	margin-left: 9px;
+}
+.price-icon{
+	/*width: 63px;
+	height: 63px;
+	background: url(../images/price-icon.png);
+	display: inline-block;
+	margin-top: 15px;
+	margin-left: 197px;
+	position:absolute;*/
+}
+.content img{
+	width: 100%；
+	height:100%;
+}
+.listview .post{
+	width: 188px;
+}
+.up-img{
+	width: 388px;
+	height: 380px;
+	float: right;
+	margin-top: 28px;
+
+}
+.show-img{
+	width: 115px;
+	height: 115px;
+	position: relative;
+	float: left;
+	margin: 0 0 12px 12px;
+	border:dashed 1px #999;
+}
+.show-img img{
+	width: 100%;
+	height: 100%;
+}
+.img-content{
+	width: 100%;
+	height: 430px;
+	border-bottom:solid 1px #999;
+}
+.del-img{
+	position: absolute;
+	/*width: 40px;
+	height: 20px;*/
+	top:-10px;
+	right: -1px;
+	padding:6px 8px;
+	border:solid 1px #b8a2a5;
+	border-radius:2px;
+	background: #ffa1b2;
+}
+.del-img .yh{
+	width: 15px;
+	height: 5px;
+	border:solid 1px #a0504f;
+	border-radius:1px;
+}
+section dl dt{
+	font-size: 25px;
+	padding-top: 10px;
+}
+.footer{
+	width: 100%;
+	background: #33a1ff;
+	padding: 12px 0;
+	text-align: center;
+}
+
+.footer .fb {
+	width: 180px;
+	height: 65px;
+	font-family: Arial;
+	color: #33a1ff;
+	font-size: 40px;
+	padding: 10px;
+	text-decoration: none;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 1px 1px 3px #ededed;
+	-moz-box-shadow: 1px 1px 3px #ededed;
+	box-shadow: 1px 1px 3px #ededed;
+	text-shadow: 1px 1px 1px #33a1ff;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ededed));
+	background: -moz-linear-gradient(top, #ffffff, #ededed);
+}
+.fb:hover {
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#ededed), to(#ffffff));
+	background: -moz-linear-gradient(top, #ededed, #ffffff)
+}
+
+section .tip{text-align: center;}
+section .sorry1{margin-top:150px;font-size:45px;}
+section .sorry2{margin-top:70px;font-size:30px;}
+section .sorry3{font-size:30px;color: #6d6b78;}
