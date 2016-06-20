@@ -22,6 +22,10 @@
     </script>
     <title>发布商品</title>
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script>var uploadUrl = './upload.php';</script>
+    <script src="js/upload-img.js"></script>
+    <script src="js/publish.js"></script>
 </head>
 <body>
     <header>
@@ -32,12 +36,12 @@
             <div class="liststore">
                 <span class="label">*</span>
                 <span class="combox">选择店铺</span>
-                <select name="">
-                    <option>好店家推荐店</option>
-                    <option>好店家推荐店</option>
-                    <option>好店家推荐店</option>
-                    <option>好店家推荐店</option>
-                    <option>好店家推荐店</option>
+                <select name="store_id">
+                    <option value="">好店家推荐店</option>
+                    <option value="">好店家推荐店</option>
+                    <option value="">好店家推荐店</option>
+                    <option value="">好店家推荐店</option>
+                    <option value="">好店家推荐店</option>
                 </select>
             </div>
             <div class="shop-info">
@@ -46,12 +50,12 @@
             <div class="listview">
                 <span class="label">*</span>
                 <span class="combox">商品类别</span>
-                <select name="">
-                    <option>好店家推荐店</option>
-                    <option>好店家推荐店</option>
-                    <option>好店家推荐店</option>
-                    <option>好店家推荐店</option>
-                    <option>好店家推荐店</option>
+                <select name="category_id">
+                    <option value="">好店家推荐店</option>
+                    <option value="">好店家推荐店</option>
+                    <option value="">好店家推荐店</option>
+                    <option value="">好店家推荐店</option>
+                    <option value="">好店家推荐店</option>
                 </select>
             </div>
             <div class="listview">
@@ -62,60 +66,70 @@
             <div class="listview">
                 <span class="label">*</span>
                 <span class="combox">价格</span>
-                <input  type="text" name="" value="10.00">
+                <input  type="text" name="price" value="10.00">
                 <span class="price-icon"></span>
             </div>
             <div class="listview">
                 <span class="label">*</span>
                 <span class="combox">库存</span>
-                <input type="text" name="" value="10">
+                <input type="text" name="quantity" value="10">
             </div>
             <div class="listview">
                 <span class="combox post">邮费</span>
-                <input type="text" name="" value="0.00">
+                <input type="text" name="postage" value="0.00">
                 <span class="price-icon"></span>
             </div>
             <span class="label">*</span>
             <span class="combox post">上传图片</span>
             <div class="img-content">
                 <div class="up-img">
+                    <a href="java:void(0)">
+                        <div class="show-img">
+                            <img src="images/add.png">
+                            <input id="upload-img" type="file" name="file" multiple="multiple" >
+                        </div>
+                    </a>
                     <div class="show-img">
-                        <img src="images/add.png">
+                        <div class="del-img">
+                            <div class="yh"></div>
+                        </div>
+                        <img class="img-list" src="">
                     </div>
                     <div class="show-img">
                         <div class="del-img">
                             <div class="yh"></div>
                         </div>
+                        <img class="img-list" src="">
                     </div>
                     <div class="show-img">
                         <div class="del-img">
                             <div class="yh"></div>
                         </div>
+                        <img class="img-list" src="">
                     </div>
                     <div class="show-img">
                         <div class="del-img">
                             <div class="yh"></div>
                         </div>
+                        <img class="img-list" src="">
                     </div>
                     <div class="show-img">
                         <div class="del-img">
                             <div class="yh"></div>
                         </div>
+                        <img class="img-list" src="">
                     </div>
                     <div class="show-img">
                         <div class="del-img">
                             <div class="yh"></div>
                         </div>
+                        <img class="img-list" src="">
                     </div>
                     <div class="show-img">
                         <div class="del-img">
                             <div class="yh"></div>
                         </div>
-                    </div>
-                    <div class="show-img">
-                        <div class="del-img">
-                            <div class="yh"></div>
-                        </div>
+                        <img class="img-list" src="">
                     </div>
                 </div>
             </div>
@@ -132,7 +146,7 @@
         </dl>
     </section>
     <div class="footer">
-        <input class="fb" type="button" value="发布">
+        <input id="publish" class="fb" type="button" value="发布">
     </div>
 </body>
 </html>

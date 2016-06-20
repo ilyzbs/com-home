@@ -155,3 +155,18 @@ section .tip{text-align: center;}
 section .sorry1{margin-top:150px;font-size:45px;}
 section .sorry2{margin-top:70px;font-size:30px;}
 section .sorry3{font-size:30px;color: #6d6b78;}
+
+/**图片上传美化控件**/
+.show-img input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    font-size: 23px;
+    direction: ltr;
+    cursor: pointer;
+    width: 115px;
+    height: 115px;
+}
