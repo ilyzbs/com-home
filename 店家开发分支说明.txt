@@ -1,0 +1,3 @@
+dev分支 - pc端手机充值页面
+add-product分支 - 手机端发布商品(master分支开出来)(图片上传用canvas实现)(未合并)
+jssdk分支 - 手机端发布商品(master分支开出来)(图片上传用微信jssdk接口实现)(正在用已经合并到master)
